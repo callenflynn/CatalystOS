@@ -1,6 +1,15 @@
-OpenBSD ?.? (UNKNOWN)
+CatalystOS ?.? (UNKNOWN)
 
-Welcome to OpenBSD: The proactively secure Unix-like operating system.
+(C) Callen Flynn
+
+CatalystOS - Accelerate Your System.
+
+based on OpenBSD
+
+
+For bugs in the CatalystOS code, please visit https://github.com/callenflynn/CatalystOS/issues
+
+For bugs in the OpenBSD code:
 
 Please use the sendbug(1) utility to report bugs in the system.
 Before reporting a bug, please try to reproduce it with the latest

@@ -67,7 +67,7 @@ id=`basename "${d}"`
 #	A month or so before release, select STATUS "-beta"
 #	and disable POOL_DEBUG in sys/conf/GENERIC
 
-ost="OpenBSD"
+ost="CatalystOS"
 osr="7.8"
 
 cat >vers.c <<eof

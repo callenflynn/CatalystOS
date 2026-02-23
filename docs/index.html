@@ -12,6 +12,15 @@
         --fg: #111;
         --muted: #4b5563;
         --accent: #0f766e;
+        --header-bg: #fff;
+      }
+
+      :root[data-theme="dark"] {
+        --bg: #181a1a;
+        --fg: #e5e7eb;
+        --muted: #9ca3af;
+        --accent: #0f766e;
+        --header-bg: #1f2222;
       }
 
       body {
@@ -41,7 +50,7 @@
       }
 
       header {
-        background: #fff;
+        background: var(--header-bg);
       }
 
       .nav-row {
@@ -91,7 +100,7 @@
 
       .tagline {
         font-size: 18px;
-        color: var(--accent);
+        color: #1898c5;
         margin-bottom: 20px;
       }
 
@@ -110,6 +119,22 @@
         text-decoration: none;
         border-radius: 6px;
         font-weight: 600;
+      }
+
+      .theme-toggle {
+        background: none;
+        border: 1px solid var(--muted);
+        color: var(--fg);
+        cursor: pointer;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: all 0.2s;
+      }
+
+      .theme-toggle:hover {
+        border-color: var(--accent);
+        color: var(--accent);
       }
 
 
@@ -179,6 +204,7 @@
           <a href="https://github.com/callenflynn/CatalystOS/wiki" rel="noopener noreferrer">Documentation</a>
           <a href="https://github.com/callenflynn/CatalystOS/issues" rel="noopener noreferrer">Issues</a>
           <a href="https://github.com/callenflynn/CatalystOS/releases" rel="noopener noreferrer">Download</a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
         </nav>
       </div>
     </header>
@@ -233,5 +259,25 @@
         </p>
       </div>
     </footer>
+    <script>
+      const themeToggle = document.getElementById('themeToggle');
+      const root = document.documentElement;
+
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      root.setAttribute('data-theme', currentTheme);
+      updateToggleButton(currentTheme);
+
+      themeToggle.addEventListener('click', () => {
+        const theme = root.getAttribute('data-theme');
+        const newTheme = theme === 'light' ? 'dark' : 'light';
+        root.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateToggleButton(newTheme);
+      });
+
+      function updateToggleButton(theme) {
+        themeToggle.textContent = theme === 'light' ? '🌙' : '☀️';
+      }
+    </script>
   </body>
 </html>
