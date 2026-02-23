@@ -1,0 +1,43 @@
+=========================
+OpenBSD-derived code
+=========================
+
+This code is derived from OpenBSD. It remains under the BSD/ISC license:
+
+Copyright (c) 2026 The OpenBSD Project
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in
+   the documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE OPENBSD PROJECT ``AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED.
+
+=========================
+Callen Flynn
+=========================
+
+Copyright (c) 2026 Callen Flynn
+Email: callen.flynn@proton.me
+
+All rights reserved. This code may be publicly viewed, and portions
+may be used in other projects **with proper attribution**, but the
+repository or full contents may **not** be copied, redistributed,
+relicensed, or claimed as your own without explicit permission.
+
+You may submit pull requests or propose changes, but may not take
+the entire project as a derivative work without consent.
+
+=========================
+Disclaimer
+=========================
+
+This software is provided "as is" without warranty of any kind. The
+author is not liable for any damages resulting from its use.
