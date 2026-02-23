@@ -1,3 +1,5 @@
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/d980b9d8-4aad-493b-ad82-4bd49808aa8f" />
+
 ## CatalystOS
 An OpenBSD based operating system, side project of mine
 
